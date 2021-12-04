@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+}
+label{
+   padding-left: 80px;
+}/*
+input[type="checkbox"]{
+    display: none;
+}*/
+
+input[type="checkbox"]:checked ~nav{
+    transform: translateX(400px);
+}
+
+nav{
+    
+    background-color: black;
+    position: absolute;
+    width: 400px;
+    height: 1000px;
+    left: -400px;
+    transition: all .7s;
+}
+ul{
+    padding-left: 40px;
+    font-size: 40px;
+    list-style: none;
+    padding-top: 250px;
+}
+li{
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+li:hover{
+    background-color: rgb(176, 224, 230);
+}
